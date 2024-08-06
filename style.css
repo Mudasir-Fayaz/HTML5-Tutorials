@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 240, 240);
+    margin: 0;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+}
+
+#nav1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#logo_name {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    color:rgb(91, 91, 255);
+    font-weight: bold;
+}
+
+#input_data {
+    border: none;
+    width: 350px;
+    height: 20px;
+    padding-left: 12px;
+    background-color: transparent;
+    outline: none;
+}
+
+.navtab {
+    display: flex;
+    align-items: center;
+padding: 0px 10px;    
+cursor: pointer;
+height: 40px;
+
+}
+
+.login::after {
+    content: '>';
+    transform: rotate(90deg);
+}
+
+.login:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.login:hover::after {
+    content: '<';
+    transform: rotate(90deg);
+}
+
+.menu {
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.menu:hover {
+    border: 1px solid black;
+}
+
+.category {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: 15px sans-serif;
+    font-weight: bold;
+}
+
+.slides {
+    margin: 10px;
+    position: relative;
+   height: 220px;
+    background-color: rgb(240, 201, 201);
+    z-index: -1;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slide_img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.prev, .next {
+    position: absolute;
+    background-color: white;
+    padding: 35px 15px;
+    top: 35%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.prev {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.dots {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: -50px;
+    width: 200px;
+    height: 20px;
+    padding: 0px 40px;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+   margin-left: 0 auto;
+}
+
+.slides img {
+    width: 100%;
+}
+
+.phones {
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    margin-top: 40px;
+   
+    height: ;
+}
+.list {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.phones .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+padding: 15px;
+border: 1px solid rgb(214, 214, 214);
+margin: 8px;
+font-size: 12px;
+border-radius: 4px;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    height: 200px;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+}
+
+.heading {
+    font:25px sans-serif;
+    padding: 13px 0;
+}
+
+.heading::after {
+    content: '>';
+    float: right;
+    background-color: blue;
+    color: #fff;
+    height: 20px;
+    padding: 10px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    list-style-type: none;
+}
+
+.line {
+    height: 1px;
+    background-color: gainsboro;
+    margin: 10px 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+} 
+ul li {
+    color: lightgray;
+}
+.links {
+    display: flex;
+    padding: 20px 0;
+    
+}
+.links-right {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    border-right: 1px solid red;
+}
+.links-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.social i{
+margin: 5px;
+color: gainsboro;
+padding: 10px;
+width: 40px;
+text-align: center;
+border: 1px solid gainsboro;
+border-radius: 50%;
+
+}
+
+
+.social i:hover {
+    background-color: gainsboro;
+    color: black;
+}
+.bottom {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-size: 12px;
+}
